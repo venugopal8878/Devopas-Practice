@@ -1,3 +1,2 @@
-#!/bin/bash
-
-echo "welcome devops practice github respositor"
+#!bin/bash/sh
+echo "welcome to devops"
