@@ -13,3 +13,14 @@ variable are given as parameters
 
 how do u run the command in shell script
 variable=$(command)
+
+conditions
+userid=($id -u)
+if [$userid -ne 0]
+then  
+    echo "not root user"
+else
+    echo "root user"
+
+and to know usrr id commad is id -u
+
