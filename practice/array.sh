@@ -2,7 +2,7 @@
 
 #creating the array
 
-fruits=("apple" "orabge" "promogranet" "water melon") #array
+fruits=("apple" "orange" "promogranet" "water melon") #array
 
 echo "first fruit is ${fruits[0]}"
 echo "secon fruit is ${fruits[1]}"
