@@ -1,0 +1,15 @@
+mainly
+variables 
+datatypes
+conditions
+loops
+functions
+
+variables --dry simples say don't repeat multipletimes
+
+variables are given directly in script
+variables are given by teraminal
+variable are given as parameters
+
+how do u run the command in shell script
+variable=$(command)
