@@ -12,6 +12,5 @@ echo "fourth fruit is ${fruits[3]}"
 
 sysdate=$(date)
 
-echo "todays date is ${date}"
+echo "todays date is ${sysdate}"
 
-date

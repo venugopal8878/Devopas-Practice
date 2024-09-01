@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userid=($id -u)
+userid=$(id -u)
 
 check_root()
 if ($userid -ne 0)

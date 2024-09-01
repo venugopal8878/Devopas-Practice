@@ -1,8 +1,8 @@
 #!bin/bash
 
-number=$0
+number=$1
 
-if [ $number gt 20 ] #gt-greater than eq-equla -nq not qual
+if [ $number -gt 20 ] #gt-greater than eq-equla -nq not qual
 then
    echo "given number $number greater than 20"
 else
