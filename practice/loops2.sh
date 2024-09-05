@@ -22,7 +22,7 @@ validate(){
     fi
 }
 
-root_chek 
+root_check 
 
 # sh loops2.sh input pakage git mysql inginx
 for pacakage in $@  #refer to all arguments passed to it
