@@ -15,6 +15,7 @@ root_check(){
 
 validate(){
     if [$? -ne 0]
+    then
      echo "$2 is not $R failed to instllaed $N"
     else
      echo "$2 is $Y sucessfully installed $N"
