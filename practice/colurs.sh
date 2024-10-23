@@ -22,3 +22,5 @@ VALIDATE(){
         echo -e "$2 is... $G SUCCESS $N"
     fi
 }
+
+#all just checking
