@@ -25,8 +25,6 @@ VALIDATE(){
  fi
 }
 
-root_check()
-
 dnf -y install dnf-plugins-core
  VALIDATE $? "install docker"
 
