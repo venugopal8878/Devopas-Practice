@@ -27,7 +27,7 @@ VALIDATE(){
 
 docker --version
 
-If ( $? -ne 0 )
+if ( $? -ne 0 )
 echo "docker is alredy there $N"
 else
  echo "going to install docker"
