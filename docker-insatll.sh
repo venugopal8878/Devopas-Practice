@@ -26,14 +26,9 @@ VALIDATE(){
 }
 
 
-if ( $? -ne 0 )
-then
-echo "going to install docker"
+
 sudo dnf -y install dnf-plugins-core
  VALIDATE $? "install docker"
- else 
- echo "docker is alredy there $N"
-fi
 
 
  
