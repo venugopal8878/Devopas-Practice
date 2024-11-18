@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userid =$(id -u)
+USERID=$(id -u)
 
 R="\e[31m"
 G="\e[32m"
@@ -9,7 +9,7 @@ Y="\e[33m"
 
 
 root_check(){
-    if [ $userid -ne 0]
+    if [ $USERID -ne 0]
     then
     echo -e "Please run the script with root user $R" 
     exit
@@ -25,9 +25,10 @@ VALIDATE(){
  fi
 }
 
-docker --version
+docker version
 
 if ( $? -ne 0 )
+then
 echo "docker is alredy there $N"
 else
  echo "going to install docker"
