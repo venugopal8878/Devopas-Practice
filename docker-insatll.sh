@@ -27,9 +27,19 @@ VALIDATE(){
 
 
 
-sudo dnf -y install dnf-plugins-core
+dnf -y install dnf-plugins-core
  VALIDATE $? "install docker"
 
+dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+VALIDATE $? "install docker second"
 
+dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+VALIDATE $? "install docker second"
+
+systemctl enable --now docker
+
+usermod -aG docker ec2-user
+
+echo -e "$R Logout and Login again $N"
  
  
