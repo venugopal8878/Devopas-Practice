@@ -32,7 +32,7 @@ dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.r
 VALIDATE $? "install docker second"
 
 dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-VALIDATE $? "install docker second"
+
 
 systemctl enable --now docker
 
